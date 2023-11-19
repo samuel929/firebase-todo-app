@@ -1,13 +1,241 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  background-color: #a4def9 !important;
+  background-image: url("./Assets//images//clouds.jpeg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+p,
+h1,
+a {
+  font-family: "Roboto", sans-serif !important;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.error-form {
+  color: red;
+}
+
+.button-login {
+  background-color: #090963 !important;
+  color: white !important;
+  height: 50px !important;
+  width: 90% !important; /* Use a percentage for a flexible width */
+  max-width: 500px !important; /* Set a maximum width for larger screens */
+  margin: 0 auto !important; /* Center the button horizontally */
+}
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .button-login {
+    width: 70% !important; /* Adjust the width for larger screens */
+  }
+}
+
+.flex-center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-login input {
+  width: 90% !important; /* Use a percentage for a flexible width */
+  max-width: 500px !important; /* Set a maximum width for larger screens */
+  border: 1px solid #f3f3f3 !important;
+  background-color: white !important;
+  padding: 10px !important; /* Adjust padding as needed */
+  box-sizing: border-box !important; /* Include padding and border in the element's total width and height */
+  margin-bottom: 15px !important; /* Add some margin for spacing */
+}
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .input-login input {
+    width: 70% !important; /* Adjust the width for larger screens */
+  }
+}
+
+.input-login input:focus {
+  width: 90% !important; /* Use a percentage for a flexible width */
+  max-width: 500px !important; /* Set a maximum width for larger screens */
+  border: 1px solid #f3f3f3 !important;
+  background-color: white !important;
+  padding: 10px !important; /* Adjust padding as needed */
+  box-sizing: border-box !important; /* Include padding and border in the element's total width and height */
+  margin-bottom: 15px !important; /* Add some margin for spacing */
+}
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .input-login input:focus {
+    width: 70% !important; /* Adjust the width for larger screens */
+  }
+}
+
+.ui.form .field.field input:-webkit-autofill {
+  border: 1px solid #f3f3f3 !important;
+  background-color: white !important;
+}
+
+.google-button {
+  background-color: white !important;
+  border: 1px solid #f3f3f3 !important;
+  width: 90% !important; /* Use a percentage for a flexible width */
+  max-width: 500px !important; /* Set a maximum width for larger screens */
+  display: flex !important;
+  margin: 50px auto !important; /* Center the button horizontally and provide vertical margin */
+  padding: 15px !important; /* Add some padding for spacing */
+  box-sizing: border-box !important; /* Include padding and border in the element's total width and height */
+}
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .google-button {
+    width: 70% !important; /* Adjust the width for larger screens */
+  }
+}
+
+.login-register-link-color {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.login-register-link-color:hover {
+  color: #aaaaaa;
+  text-decoration: underline;
+}
+
+.ui.dropdown .menu {
+  left: -60px !important;
+  top: 50px !important;
+}
+
+.todo-card {
+  width: 90%; /* Use a percentage for a flexible width */
+  max-width: 400px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the card horizontally */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .todo-card {
+    width: 99%; /* Adjust the width for larger screens */
+  }
+}
+
+.card-scroll {
+  height: 400px; /* Set your desired fixed height */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.flex-end-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ui.button.add-task-btn {
+  background-color: #682ee3 !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+.ui.button.cancel-btn {
+  border: 1px solid #e9eaf2 !important;
+  color: #7d80a5 !important;
+  background-color: white !important;
+}
+
+.actions.action-content-holder {
+  background-color: white !important;
+  border-top: 1px solid white !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header.headers {
+  border-bottom: 1px solid white !important;
+  color: #7d80a5 !important;
+}
+
+.add-task-input {
+  border: none !important;
+}
+
+.add-task-input::placeholder {
+  border: none !important;
+  color: #d6d8e2 !important;
+}
+
+.ui.modal.transition.visible.active.add-task-modal {
+  border-radius: 109px !important;
+}
+
+.placeholder-flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+
+.placeholder-segment-width {
+  width: 300px;
+}
+
+.user-icon-position {
+  position: relative;
+  top: 9px;
+}
+
+.card-padding-position {
+  padding: 30px 50px 0 50px;
+}
+
+.card-flex-container-todo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: "center";
+}
+
+.todo-card-padding-container {
+  padding: 55px 1px 83px 0px;
+}
+
+.forgot-password-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 20px 0;
+}
+
+.forgot-password-text-color{
+  color:whitesmoke;
+}
+
+.already-have-account-text{
+  text-align: center;
+  color:whitesmoke;
+}
+
+.add-todo-circle{
+  position: relative;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.todos-header-container-add{
+  position: relative;
+   top: -10px;
 }
