@@ -25,7 +25,7 @@ function App() {
   }, [dispatch]);
   return (
 
-    <Router>
+    <Router basename="/firebase-todo-app">
       <Routes>
         <Route path="/" element={ user != null ? <Todo /> : <Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />

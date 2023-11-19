@@ -88,7 +88,7 @@ const Login = () => {
             <Header as='h1'>Welcome Back TaskMaster</Header>
 
             </div>
-        <Button onClick={()=>signInWithGoogle()} className="google-button">
+        <Button type="button" onClick={()=>signInWithGoogle()} className="google-button">
          <FcGoogle size={30}/>
          <p style={{position:"relative",left:"13%", top:"5px"}}>Log in with Google</p>
          </Button>
